@@ -433,3 +433,14 @@ data {
   font-family: "Muller";
   background-color: #6fcf97;
 }
+
+.groupe_text__under h5 {
+  font-weight: lighter;
+  margin: 20px 0 0 0;
+  line-height: 28px;
+}
+
+.groupe_text__under p {
+  line-height: 28px;
+  margin-bottom: 20px;
+}
