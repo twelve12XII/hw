@@ -2,27 +2,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
     <title>Главная страница</title>
   </head>
-  <body>
+  <body style="background-color: #eaeffc">
+    <header
+      class="container"
+      style="display: grid; grid-template-columns: 1fr 2fr 1fr"
+    >
+      <div class="header_search">
+        <input type="search" placeholder="Поиск по сайту" />
+        <div class="search_buttons">
+          <button
+            style="background-image: url(../../src/img/header/x_input.svg)"
+          ></button>
+          <div
+            style="height: 40px; width: 1px; background-color: #cccccc"
+          ></div>
+          <button
+            style="background-image: url(../../src/img/header/search_icon.svg)"
+          ></button>
+        </div>
+      </div>
+      <div class="header_buttons">
+        <button class="language_btn">RU</button>
+        <a href="#" type="button" class="enter_btn">Войти</a>
+      </div>
+    </header>
     <div class="info_container">
-      <div class="mainPage_container">
+      <div class="mainPage_container" style="margin-top: 2vh">
         <div class="navigation container">
           <p style="opacity: 100%">Категории:</p>
-          <ul>
-            <li class="navigation_li">
+          <ul style="margin-top: 6px">
+            <li
+              class="navigation_li"
+              style="
+                background-color: #1946ba;
+                border-radius: 10px;
+                margin-right: 30px;
+                margin-bottom: 10px;
+                border: 10px solid #1946ba;
+              "
+            >
               <img
                 class="navigation_img"
-                src="./src/img/nav/Physics.svg"
+                src="../../src/img/nav/Physics.svg"
                 alt="physics_icon"
               />
-              <a href="./pages/physics/index.html">Физика</a>
+              <a href="./pages/physics/index.html" style="color: white"
+                >Физика</a
+              >
             </li>
             <li class="navigation_li">
               <img
                 class="navigation_img"
-                src="./src/img/nav/Chemistry.svg"
+                src="../../src/img/nav/Chemistry.svg"
                 alt="physics_icon"
               />
               <a href="#">Химия</a>
@@ -30,7 +64,7 @@
             <li class="navigation_li">
               <img
                 class="navigation_img"
-                src="./src/img/nav/Biology.svg"
+                src="../../src/img/nav/Biology.svg"
                 alt="physics_icon"
               />
               <a href="#">Биология</a>
@@ -38,28 +72,28 @@
             <li class="navigation_li">
               <img
                 class="navigation_img"
-                src="./src/img/nav/Economy.svg"
+                src="../../src/img/nav/Economy.svg"
                 alt="physics_icon"
               /><a href="#">Экономика</a>
             </li>
             <li class="navigation_li">
               <img
                 class="navigation_img"
-                src="./src/img/nav/Mechanics.svg"
+                src="../../src/img/nav/Mechanics.svg"
                 alt="physics_icon"
               /><a href="#">Механика</a>
             </li>
             <li class="navigation_li">
               <img
                 class="navigation_img"
-                src="./src/img/nav/Engineering.svg"
+                src="../../src/img/nav/Engineering.svg"
                 alt="physics_icon"
               /><a href="#">Инженерия</a>
             </li>
             <li class="navigation_li">
               <img
                 class="navigation_img"
-                src="./src/img/nav/seCatalog.svg"
+                src="../../src/img/nav/seCatalog.svg"
                 alt="physics_icon"
               />
               <a href="#">Каталог научного оборудования</a>
@@ -67,88 +101,125 @@
             <li class="navigation_li">
               <img
                 class="navigation_img"
-                src="./src/img/nav/raEquipment.svg"
+                src="../../src/img/nav/raEquipment.svg"
                 alt="physics_icon"
               /><a href="#">Оборудование с УД</a>
             </li>
           </ul>
         </div>
-        <div class="mainPage_content">
-          <article class="greet container">
-            <div class="greet_content">
-              <h1>
-                Добро пожаловать в навигатор<br />
-                по научному оборудованию.
-              </h1>
-              <p>
-                Центры коллективного пользования научным оборудованием<br />
-                и уникальные научные установки
-              </p>
-              <div class="greet_data">
-                <div class="greet_data-item">
-                  <data value="614">614</data>
-                  <p>
-                    Зарегистрировано<br />
-                    центров коллективного пользования
-                  </p>
-                </div>
-                <div class="greet_data-item">
-                  <data value="362">362</data>
-                  <p>
-                    Зарегистрировано<br />
-                    уникальных научных установок
-                  </p>
-                </div>
-                <div class="greet_data-item">
-                  <data value="7">7</data>
-                  <p>
-                    Создается в России<br />
-                    установок класса "Megascience"
-                  </p>
-                </div>
+        <div
+          class="mainPage_content"
+          style="background-color: white; grid-row: span 2; color: black"
+        >
+          <div class="catalog container">
+            <h2>Каталог</h2>
+            <div
+              style="
+                height: 1px;
+                width: 90%;
+                align-items: center;
+                background-color: #c4c4c4;
+              "
+            ></div>
+            <h3>Оптическое оборудование</h3>
+            <div
+              class="catalog_list"
+              style="opacity: 40%; display: flex; flex-direction: column"
+            >
+              <div class="checkbox">
+                <input id="Checkbox1" name="Checkbox1" type="checkbox" />
+                <label for="Checkbox1">Пример1</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox2" name="Checkbox2" type="checkbox" />
+                <label for="Checkbox2">Пример2</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox3" name="Checkbox3" type="checkbox" />
+                <label for="Checkbox3">Пример3</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox4" name="Checkbox4" type="checkbox" />
+                <label for="Checkbox4">Пример4</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox5" name="Checkbox5" type="checkbox" />
+                <label for="Checkbox5">Пример5</label>
               </div>
             </div>
-            <div class="greet_circle"></div>
-          </article>
-          <article class="collectiveAccessCatalog container">
-            <h1>
-              Каталог оборудования<br />
-              с коллективным доступом.
-            </h1>
-            <p>
-              Добро пожаловать в наш каталог, в котором вы сможете<br />
-              ознакомиться со всеми нашими товарами.
-            </p>
-            <a href="#" type="button" class="btn_open">Открыть</a>
-          </article>
-          <article class="remoteCatalog container">
-            <h1>Каталог оборудования с удаленным доступом.</h1>
-            <p>
-              Добро пожаловать в наш каталог, в котором вы сможете<br />
-              ознакомиться со всеми нашими товарами.
-            </p>
-            <a href="#" type="button" class="btn_open">Открыть</a>
-          </article>
+            <h3>Лазерное оборудование</h3>
+            <div
+              class="catalog_list"
+              style="opacity: 40%; display: flex; flex-direction: column"
+            >
+              <div class="checkbox">
+                <input id="Checkbox1" name="Checkbox1" type="checkbox" />
+                <label for="Checkbox1">Пример1</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox2" name="Checkbox2" type="checkbox" />
+                <label for="Checkbox2">Пример2</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox3" name="Checkbox3" type="checkbox" />
+                <label for="Checkbox3">Пример3</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox4" name="Checkbox4" type="checkbox" />
+                <label for="Checkbox4">Пример4</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox5" name="Checkbox5" type="checkbox" />
+                <label for="Checkbox5">Пример5</label>
+              </div>
+            </div>
+            <h3>Измерительное оборудование</h3>
+            <div
+              class="catalog_list"
+              style="opacity: 40%; display: flex; flex-direction: column"
+            >
+              <div class="checkbox">
+                <input id="Checkbox1" name="Checkbox1" type="checkbox" />
+                <label for="Checkbox1">Пример1</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox2" name="Checkbox2" type="checkbox" />
+                <label for="Checkbox2">Пример2</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox3" name="Checkbox3" type="checkbox" />
+                <label for="Checkbox3">Пример3</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox4" name="Checkbox4" type="checkbox" />
+                <label for="Checkbox4">Пример4</label>
+              </div>
+              <div class="checkbox">
+                <input id="Checkbox5" name="Checkbox5" type="checkbox" />
+                <label for="Checkbox5">Пример5</label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="examples">
         <a href="#" class="examples_item container">
-          <img src="./src/img/Example.svg" alt="example picture" />
+          <img src="../../src/img/Example.svg" alt="example picture" />
           <h3>Пример1</h3>
           <p>Пример1</p>
         </a>
         <a href="#" class="examples_item container">
-          <img src="./src/img/Example.svg" alt="example picture" />
+          <img src="../../src/img/Example.svg" alt="example picture" />
           <h3>Пример2</h3>
           <p>Пример2</p>
         </a>
         <a href="#" class="examples_item container">
-          <img src="./src/img/Example.svg" alt="example picture" />
+          <img src="../../src/img/Example.svg" alt="example picture" />
           <h3>Пример3</h3>
           <p>Пример3</p>
         </a>
         <a href="#" class="examples_item container">
-          <img src="./src/img/Example.svg" alt="example picture" />
+          <img src="../../src/img/Example.svg" alt="example picture" />
           <h3>Пример4</h3>
           <p>Пример4</p>
         </a>
@@ -166,7 +237,7 @@
           <div class="examples optics">
             <div class="examples_item binoculars_item">
               <div class="square_blue"></div>
-              <img src="./src/img/binoculars.png" alt="binoculars" />
+              <img src="../../src/img/binoculars.png" alt="binoculars" />
               <h3>Бинокль 1</h3>
               <p>
                 Описание аппарата 1<br />
@@ -177,7 +248,7 @@
             </div>
             <div class="examples_item binoculars_item">
               <div class="square_blue"></div>
-              <img src="./src/img/binoculars.png" alt="binoculars" />
+              <img src="../../src/img/binoculars.png" alt="binoculars" />
               <h3 class="h3__bold">Бинокль 2</h3>
               <p>
                 Описание аппарата 1<br />
@@ -188,7 +259,7 @@
             </div>
             <div class="examples_item binoculars_item">
               <div class="square_blue"></div>
-              <img src="./src/img/binoculars.png" alt="binoculars" />
+              <img src="../../src/img/binoculars.png" alt="binoculars" />
               <h3>Бинокль 3</h3>
               <p>
                 Описание аппарата 1<br />
@@ -199,7 +270,7 @@
             </div>
             <div class="examples_item binoculars_item">
               <div class="square_blue"></div>
-              <img src="./src/img/binoculars.png" alt="binoculars" />
+              <img src="../../src/img/binoculars.png" alt="binoculars" />
               <h3>Бинокль 4</h3>
               <p>
                 Описание аппарата 1<br />
@@ -224,7 +295,7 @@
           <div class="examples optics">
             <div class="examples_item binoculars_item">
               <div class="square_blue"></div>
-              <img src="./src/img/binoculars.png" alt="binoculars" />
+              <img src="../../src/img/binoculars.png" alt="binoculars" />
               <h3>Бинокль 1</h3>
               <p>
                 Описание аппарата 1<br />
@@ -235,7 +306,7 @@
             </div>
             <div class="examples_item binoculars_item">
               <div class="square_blue"></div>
-              <img src="./src/img/binoculars.png" alt="binoculars" />
+              <img src="../../src/img/binoculars.png" alt="binoculars" />
               <h3 class="h3__bold">Бинокль 2</h3>
               <p>
                 Описание аппарата 1<br />
@@ -246,7 +317,7 @@
             </div>
             <div class="examples_item binoculars_item">
               <div class="square_blue"></div>
-              <img src="./src/img/binoculars.png" alt="binoculars" />
+              <img src="../../src/img/binoculars.png" alt="binoculars" />
               <h3>Бинокль 3</h3>
               <p>
                 Описание аппарата 1<br />
@@ -257,7 +328,7 @@
             </div>
             <div class="examples_item binoculars_item">
               <div class="square_blue"></div>
-              <img src="./src/img/binoculars.png" alt="binoculars" />
+              <img src="../../src/img/binoculars.png" alt="binoculars" />
               <h3>Бинокль 4</h3>
               <p>
                 Описание аппарата 1<br />
@@ -311,7 +382,7 @@
             email: so@itmo.ru<br />
             Время работы: пн-пт с 9:00 до 19:00
           </p>
-          <a href="#" type="button" class="connect_btn">Напишите нам</a>
+          <a href="#" type="button" class="btn_connect">Напишите нам</a>
           <div class="social">
             <p>Мы в соцсетях</p>
             <a href="#"><img src="img/vk.png" alt="vk" /></a>
